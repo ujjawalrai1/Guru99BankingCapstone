@@ -23,21 +23,11 @@ Hybrid Framework (POM + Data Driven)
 - Withdraw
 - Fund Transfer
 
-## Project Structure
-- base
-- pages
-- testcases
-- utilities
-- testdata
-- reports
-
-## Features
-- Page Object Model (POM)
-- Data Driven Testing
-- Explicit Waits
-- Screenshots on Failure
-- Extent Reporting
-- Jenkins Integration
-
 ## Author
 Ujjawal Rai
+
+## Batch
+Batch 3
+
+## Mentor
+Vaishali Ma'am

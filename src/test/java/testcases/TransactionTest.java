@@ -13,6 +13,11 @@ public class TransactionTest extends BaseTest {
 
 	@Test(priority = 1)
 	public void depositTest() {
+		if (ConfigReader.accountId == null ||
+			    ConfigReader.accountId.isEmpty()) {
+
+			    ConfigReader.accountId = "184213";
+			}
 
 	    ConfigReader config = new ConfigReader();
 
@@ -40,6 +45,11 @@ public class TransactionTest extends BaseTest {
 	}
     @Test(priority = 2)
     public void withdrawalTest() {
+    	if (ConfigReader.accountId == null ||
+    		    ConfigReader.accountId.isEmpty()) {
+
+    		    ConfigReader.accountId = "184213";
+    		}
 
         ConfigReader config = new ConfigReader();
 
@@ -69,6 +79,11 @@ public class TransactionTest extends BaseTest {
 
     @Test(priority = 3)
     public void balanceValidationTest() {
+    	if (ConfigReader.accountId == null ||
+    		    ConfigReader.accountId.isEmpty()) {
+
+    		    ConfigReader.accountId = "184213";
+    		}
 
         Assert.assertNotNull(
                 ConfigReader.accountId,

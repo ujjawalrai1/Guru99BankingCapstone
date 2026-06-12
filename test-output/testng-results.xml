@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-12T13:04:49 IST" name="Default suite" finished-at="2026-06-12T13:05:04 IST" duration-ms="15566">
+  <suite started-at="2026-06-12T13:17:49 IST" name="Default suite" finished-at="2026-06-12T13:18:01 IST" duration-ms="12560">
     <groups>
     </groups>
-    <test started-at="2026-06-12T13:04:49 IST" name="Default test" finished-at="2026-06-12T13:05:04 IST" duration-ms="15566">
+    <test started-at="2026-06-12T13:17:49 IST" name="Default test" finished-at="2026-06-12T13:18:01 IST" duration-ms="12560">
       <class name="testcases.AccountTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:04:49 IST" name="setup" finished-at="2026-06-12T13:04:55 IST" duration-ms="6053" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:17:49 IST" name="setup" finished-at="2026-06-12T13:17:53 IST" duration-ms="4789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createAccountTest()[pri:1, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:04:55 IST" name="createAccountTest" finished-at="2026-06-12T13:05:00 IST" duration-ms="4552" status="PASS">
+        <test-method signature="createAccountTest()[pri:1, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:17:53 IST" name="createAccountTest" finished-at="2026-06-12T13:17:58 IST" duration-ms="4516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:05:00 IST" name="tearDown" finished-at="2026-06-12T13:05:00 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:17:58 IST" name="tearDown" finished-at="2026-06-12T13:17:58 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:05:00 IST" name="setup" finished-at="2026-06-12T13:05:04 IST" duration-ms="4732" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:17:58 IST" name="setup" finished-at="2026-06-12T13:18:01 IST" duration-ms="3031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAccountDetailsTest()[pri:2, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:05:04 IST" name="verifyAccountDetailsTest" finished-at="2026-06-12T13:05:04 IST" duration-ms="2" status="PASS">
+        <test-method signature="verifyAccountDetailsTest()[pri:2, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:18:01 IST" name="verifyAccountDetailsTest" finished-at="2026-06-12T13:18:01 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountDetailsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:05:04 IST" name="tearDown" finished-at="2026-06-12T13:05:04 IST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AccountTest@f6efaab]" started-at="2026-06-12T13:18:01 IST" name="tearDown" finished-at="2026-06-12T13:18:01 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

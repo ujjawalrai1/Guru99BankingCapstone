@@ -10,7 +10,7 @@ import utilities.ConfigReader;
 
 public class AccountTest extends BaseTest {
 
-    String accountId;
+    public static String accountId;
 
     @Test(priority = 1)
     public void createAccountTest() {
@@ -30,6 +30,7 @@ public class AccountTest extends BaseTest {
 
         accountPage.clickNewAccount();
 
+        // Use valid customer id
         String customerId = "29195";
 
         System.out.println(
@@ -46,6 +47,7 @@ public class AccountTest extends BaseTest {
                 "Generated Account ID = "
                         + accountId);
 
+        // Store globally for TransactionTest
         ConfigReader.accountId =
                 accountId;
 
@@ -54,7 +56,7 @@ public class AccountTest extends BaseTest {
                 "Account ID is null");
 
         Assert.assertFalse(
-                accountId.isEmpty(),
+                accountId.trim().isEmpty(),
                 "Account ID is empty");
     }
 
@@ -70,7 +72,7 @@ public class AccountTest extends BaseTest {
                 "Account ID not generated");
 
         Assert.assertFalse(
-                ConfigReader.accountId.isEmpty(),
+                ConfigReader.accountId.trim().isEmpty(),
                 "Account ID is empty");
     }
 }

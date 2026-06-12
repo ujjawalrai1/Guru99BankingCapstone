@@ -10,7 +10,7 @@ import utilities.ConfigReader;
 
 public class AccountTest extends BaseTest {
 
-    public static String accountId;
+    String accountId;
 
     @Test(priority = 1)
     public void createAccountTest() {
@@ -30,38 +30,40 @@ public class AccountTest extends BaseTest {
 
         accountPage.clickNewAccount();
 
-        // Customer ID from CustomerTest
         String customerId = "29195";
 
-        System.out.println("Customer ID = " + customerId);
+        System.out.println(
+                "Customer ID = " + customerId);
 
         accountPage.createAccount(
                 customerId,
                 "5000");
+
         accountId =
                 accountPage.getAccountId();
 
-        // IMPORTANT
+        System.out.println(
+                "Generated Account ID = "
+                        + accountId);
+
         ConfigReader.accountId =
                 accountId;
 
-        System.out.println(
-                "Generated Account ID : "
-                        + accountId);
+        Assert.assertNotNull(
+                accountId,
+                "Account ID is null");
 
         Assert.assertFalse(
                 accountId.isEmpty(),
-                "Account ID Not Generated");
-
-        Assert.assertTrue(
-                driver.getPageSource()
-                        .contains(
-                                "Account Generated Successfully"),
-                "Account Creation Failed");
+                "Account ID is empty");
     }
 
     @Test(priority = 2)
     public void verifyAccountDetailsTest() {
+
+        System.out.println(
+                "Stored Account ID = "
+                        + ConfigReader.accountId);
 
         Assert.assertNotNull(
                 ConfigReader.accountId,

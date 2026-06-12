@@ -13,50 +13,49 @@ public class NewAccountPage {
     }
 
     By newAccountLink = By.linkText("New Account");
-
     By customerId = By.name("cusid");
-
     By accountType = By.name("selaccount");
-
     By initialDeposit = By.name("inideposit");
-
     By submitBtn = By.name("button2");
 
-    // Account ID on Success Page
-    By accountIdText = By.xpath("//table//tr[4]/td[2]");
-
     public void clickNewAccount() {
-
         driver.findElement(newAccountLink).click();
     }
 
-    public void createAccount(String custId,
-                              String deposit) {
+    public void createAccount(String custId, String deposit) {
 
-        driver.findElement(customerId)
-                .sendKeys(custId);
+        driver.findElement(customerId).clear();
+        driver.findElement(customerId).sendKeys(custId);
 
         Select select =
                 new Select(driver.findElement(accountType));
 
         select.selectByVisibleText("Savings");
 
-        driver.findElement(initialDeposit)
-                .sendKeys(deposit);
+        driver.findElement(initialDeposit).clear();
+        driver.findElement(initialDeposit).sendKeys(deposit);
 
-        driver.findElement(submitBtn)
-                .click();
+        driver.findElement(submitBtn).click();
 
         try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            Thread.sleep(3000);
+        } catch (Exception e) {
         }
     }
 
     public String getAccountId() {
 
-        return driver.findElement(accountIdText)
-                .getText();
+        try {
+
+            return driver.findElement(
+                    By.xpath("//td[text()='Account ID']/following-sibling::td"))
+                    .getText()
+                    .trim();
+
+        } catch (Exception e) {
+
+            System.out.println("Account ID not found");
+            return "";
+        }
     }
 }

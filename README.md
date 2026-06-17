@@ -1,27 +1,13 @@
-# Guru99 Banking Capstone
 
-## Project Overview
-Automation Testing Framework for BFSI Applications using Selenium Java.
 
-## Technologies Used
-- Java
-- Selenium WebDriver
-- TestNG
-- Maven
-- Git
-- Jenkins
-- Extent Reports
+## Demo Video
 
-## Framework Type
-Hybrid Framework (POM + Data Driven)
+Google Drive Link:
 
-## Modules Automated
-- Login
-- Add Customer
-- Open Account
-- Deposit
-- Withdraw
-- Fund Transfer
+https://drive.google.com/file/d/1vd8HwO6ujtYOtE1Gmg7FAe84g3PpQy_q/view?usp=drivesdk
+
+
+
 
 ## Author
 Ujjawal Rai
